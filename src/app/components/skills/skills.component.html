@@ -1,0 +1,80 @@
+<div class="container zeroTop lead" style="margin-top: 0px; padding-top: 55px">
+  <h2 class="center">Skills</h2>
+  <p class="center">My technical level</p>
+
+  <div class="row d-flex justify-content-between">
+    <div class="col-lg-2 col-12"></div>
+    <div class="col-lg-4 col-md-6 col-12">
+      <!--  -->
+      <div class="center darkbg">
+        <div type="button" (click)="OnClick1()">
+          <span style="font-size: 30px"
+            ><i class="bi bi-braces SizeOfIcon"></i
+          ></span>
+          Front-End developer<span class="leftMargin" *ngIf="dropdown1">
+            <i class="bi bi-chevron-compact-up"></i
+          ></span>
+          <span class="leftMargin" style="padding: 20px" *ngIf="!dropdown1"
+            ><i class="bi bi-chevron-compact-down"></i
+          ></span>
+          <p style="font-weight: 200; font-size: small; margin-right: 12%">
+            more then 4 skils
+          </p>
+        </div>
+
+        <div *ngIf="!!dropdown1" class="">
+          <div *ngFor="let item of this.skills[0].frontEnd">
+            <div class="d-flex justify-content-between">
+              <label class="form-label">{{ item.skill }}</label>
+              <p>{{ item.percent }}</p>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped active"
+                [ngStyle]="{ width: item.percent }"
+              >
+                {{ item.percent }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-12">
+      <!--  -->
+      <div class="center darkbg mt-2">
+        <div type="button" (click)="OnClick2()">
+          <span><i class="bi bi-database-gear"></i></span>Bach-end
+          developer<span class="leftMargin" *ngIf="dropdown2"
+            ><i class="bi bi-chevron-compact-up"></i
+          ></span>
+          <span class="leftMargin" *ngIf="!dropdown2"
+            ><i class="bi bi-chevron-compact-down"></i
+          ></span>
+          <p style="font-weight: 200; font-size: small; margin-right: 12%">
+            more then 4 skils
+          </p>
+        </div>
+
+        <div *ngIf="!!dropdown2" class="">
+          <!-- 1 -->
+          <div *ngFor="let item of this.skills[0].backEnd">
+            <div class="d-flex justify-content-between">
+              <label class="form-label">{{ item.skill }}</label>
+              <p>{{ item.percent }}</p>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped active"
+                [ngStyle]="{ width: item.percent }"
+              >
+                {{ item.percent }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-12"></div>
+  </div>
+</div>

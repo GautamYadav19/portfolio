@@ -1,1 +1,21 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 /* You can add global styles to this file, and also import other style files */
+h2{
+  font-weight: 600;
+  font-size:30px;
+}
+p{
+  font-weight: 350;
+}
+
+
+
+*{
+  background-color:rgb(252, 252, 249);
+}
+.zeroTop{
+  margin-top: 0px;
+  padding-top: 55px;
+  /* margin-top: 0px;
+  padding-top: 55px"; */
+}

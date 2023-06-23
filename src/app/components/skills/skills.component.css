@@ -1,0 +1,30 @@
+.center{
+  text-align: center;
+}
+.progress-bar{
+  color:aliceblue;
+  background-color: blueviolet;
+}
+
+h2{
+  font-weight: 600;
+  font-size:30px;
+}
+p{
+  font-weight: 350;
+  /* mix-blend-mode: multiply; */
+}
+.leftMargin{
+  margin-left: 10%
+}
+.SizeOfIcon{
+
+}
+i.bi.bi-braces.SizeOfIcon::before{
+  font-size: x-large;
+}
+.darkbg{
+  margin: inherit; border: 1px px solid; padding: 18px;
+
+}
+

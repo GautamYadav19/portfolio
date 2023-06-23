@@ -1,0 +1,19 @@
+#box{
+  height: 250px;
+  width: 270px;
+  margin-left: 3%;
+  border-radius: 50% 20% / 10% 40%;
+  background-color:aliceblue;
+}
+
+.btn{
+  font-weight: 600;
+  color:aliceblue ;background-color:#7d1dd6 ;
+}
+p{
+  font-size: medium;
+}
+.card{
+  height:fit-content;
+}
+
