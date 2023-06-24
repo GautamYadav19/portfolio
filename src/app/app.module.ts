@@ -11,8 +11,9 @@ import { EducationWorkComponent } from './components/education-work/education-wo
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactmeComponent } from './components/contactme/contactme.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ScrollerComponent } from './service/scroller/scroller.component';
 import { PopUpContactMeComponent } from './components/contactme/pop-up-contact-me/pop-up-contact-me.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,14 +26,15 @@ import { PopUpContactMeComponent } from './components/contactme/pop-up-contact-m
     ProjectsComponent,
     ContactmeComponent,
     FooterComponent,
-    ScrollerComponent,
-    PopUpContactMeComponent
+    PopUpContactMeComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

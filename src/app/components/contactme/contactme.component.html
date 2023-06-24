@@ -2,6 +2,27 @@
   <div class="row">
     <h2 class="d-flex justify-content-center">Contact Me</h2>
     <p class="d-flex justify-content-center">Get in touch</p>
+    <div
+      *ngIf="error"
+      style="text-align: center"
+      class="alert alert-danger"
+      role="alert"
+    >
+      Please fill correct inputs
+    </div>
+    <div *ngIf="submitted" class="text-center">
+      <div class="spinner-border" role="status">
+        <span class="sr-only"></span>
+      </div>
+    </div>
+    <div
+      style="text-align: center"
+      *ngIf="messageSend"
+      class="alert alert-primary"
+      role="alert"
+    >
+      Done !!
+    </div>
     <div class="col-lg-2"></div>
     <div class="col-lg-4 col-md-6 col-12 lead">
       <div>
@@ -21,7 +42,7 @@
     </div>
 
     <div class="col-lg-4 col-md-6 col-12">
-      <form>
+      <form [formGroup]="contactform" (submit)="onSubmit()">
         <div class="form-row">
           <div class="form-group col-md-12">
             <!-- <label for="inputEmail4"> Email</label> -->
@@ -30,6 +51,7 @@
               type="email"
               id="inputEmail4"
               placeholder="Enter Your Email"
+              formControlName="senderEmail"
             />
           </div>
           <div class="form-group col-md-12">
@@ -39,6 +61,7 @@
               class="form-control"
               id="name"
               placeholder="Enter your name"
+              formControlName="name"
             />
           </div>
         </div>
@@ -49,11 +72,15 @@
             class="form-control"
             id="message"
             placeholder="Enter your message"
+            formControlName="message"
           ></textarea>
         </div>
-        <div class="mybtn mb-3 mt-3">
+        <button class="mybtn mb-3 mt-3">
           Send Message <i class="bi bi-cursor"></i>
-        </div>
+        </button>
+        <!-- <div class="mybtn mb-3 mt-3">
+          Send Message <i class="bi bi-cursor"></i>
+        </div> -->
       </form>
     </div>
     <div class="col-lg-1 col-md-1"></div>

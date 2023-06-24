@@ -6,19 +6,26 @@ const sendMail = async (req, res) => {
     port: 587,
     secure: false,
     auth: {
-      user: "Enter_YOUR_GMAIL",
-      pass: "PASSWORD",
+      user: "your_gmail@gmail.com",
+      pass: "your password",
     },
   });
+
   let info = await transporter.sendMail({
-    from: "pyg@gmail.com", // sender address
-    to: "gautamyadav1992002@gmail.com", // list of receivers
-    subject: "test", // Subject line
-    text: "haan bhai chnage hai bhai gaya?", // plain text body
-    html: "<b>Hello world?</b>", // html body
+    from: req.body.sender,
+    to: "gautamyadav1992002@gmail.com",
+    subject: "PortFolio Message",
+    text: ` from ${req.body.senderEmail} , name : ${req.body.name} and the message is ${req.body.message}`,
+    html: `<h3>from</h3> :  <h3> ${req.body.senderEmail}</h3>  <p>name :  ${req.body.name} and the message is ${req.body.message}</p>`,
   });
-  console.log("message send : %s", info.messageId);
-  res.json(info);
+  let info2 = await transporter.sendMail({
+    from: "gautamyadav1992002@gmail.com",
+    to: req.body.senderEmail,
+    subject: "feed-back message",
+    text: `Your Message has been successfully send to Gautam Yadav ,
+    ${req.body.message}`,
+  });
+  res.json(info2);
 };
 
 module.exports = sendMail;

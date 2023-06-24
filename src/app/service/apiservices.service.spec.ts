@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ScrollerService } from './scroller.service';
+import { ApiservicesService } from './apiservices.service';
 
-describe('ScrollerService', () => {
-  let service: ScrollerService;
+describe('ApiservicesService', () => {
+  let service: ApiservicesService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ScrollerService);
+    service = TestBed.inject(ApiservicesService);
   });
 
   it('should be created', () => {
