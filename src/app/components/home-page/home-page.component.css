@@ -44,3 +44,8 @@ i{
   background-color: blueviolet;
 }
 
+p{
+  font-size: 15px;
+  font-family: system-ui;
+  font-weight: normal;
+}

@@ -6,12 +6,12 @@ const sendMail = async (req, res) => {
     port: 587,
     secure: false,
     auth: {
-      user: "gautamyadav1992002@gmail.com",
-      pass: "gkyy2002",
+      user: "Enter_YOUR_GMAIL",
+      pass: "PASSWORD",
     },
   });
   let info = await transporter.sendMail({
-    from: "pygcommunication@gmail.com", // sender address
+    from: "pyg@gmail.com", // sender address
     to: "gautamyadav1992002@gmail.com", // list of receivers
     subject: "test", // Subject line
     text: "haan bhai chnage hai bhai gaya?", // plain text body

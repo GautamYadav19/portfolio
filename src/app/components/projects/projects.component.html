@@ -12,12 +12,21 @@
     >
       my practices
     </p>
-    <div
+    <h6 style="text-align: center">
+      <a href="https://github.com/GautamYadav19">
+        <i class="bi bi-github">GitHub</i>
+      </a>
+    </h6>
+    <!-- <div
       *ngFor="let project of projects"
       class="col-lg-3 col-md-3 col-12 d-flex justify-content-center mt-2"
     >
       <div class="card ml-3 mt-2" style="width: 18rem; height: 100%">
-        <div id="box" class=""></div>
+        <div id="box" class="">
+          <i
+            ><img src="{{ project.src }} " style="height: 30px; width: auto"
+          /></i>
+        </div>
         <div class="card-body">
           <h5 class="card-title">
             {{ project.name }}
@@ -31,75 +40,38 @@
             {{ project.about }}
           </p>
 
-          <a href="{{ project.link }}" class="btn">view on github</a>
-        </div>
-      </div>
-    </div>
-    <!-- <div class="col-lg-2 col-md-2"></div> -->
-    <!-- <div class="col-lg-3 col-md-3 col-12 d-flex justify-content-center">
-      <div class="card ml-3 mt-2" style="width: 18rem">
-        <div id="box"></div>
-        <div class="card-body">
-          <h5 class="card-title">
-            Protfolio
-            <i
-              ><img
-                src="../../../assets/resume.png"
-                style="height: 30px; width: auto"
-            /></i>
-          </h5>
-          <p class="card-text">
-            Creative Portfolio Showcasing Design Excellence and Innovation as a
-            Fresher.
-          </p>
-          <a href="#" class="btn">view on github</a>
+          <a href="{{ project.link }}" class="btn">view on github </a>
         </div>
       </div>
     </div> -->
-    <!-- <div class="col-lg-3 col-md-3 col-12 d-flex justify-content-center">
-      <div class="card ml-3 mt-2" style="width: 18rem">
-              <div id="box"></div>
+    <!--  -->
+    <div
+      *ngFor="let project of projects"
+      class="col-lg-3 col-md-3 col-12 d-flex justify-content-center mt-2"
+    >
+      <div class="card ml-3 mt-2" style="width: 18rem; height: 100%">
         <div class="card-body">
           <h5 class="card-title">
-            CURD
             <i
               ><img
-                src="../../../assets/2559486.png"
-                style="height: 30px; width: auto"
+                src="{{ project.src }} "
+                style="
+                  height: auto;
+                  width: 30%;
+                  margin-left: 3%;
+                  margin: 18%;
+                  margin-left: 31%;
+                "
             /></i>
           </h5>
-          <p class="card-text">
-            CRUD Operations: Leveraging Data Management Skills for Optimal
-            Results.
-          </p>
-          <a
-            href="https://github.com/GautamYadav19/Employe-application.git"
-            class="btn"
-            >view on github</a
-          >
+          <h5 class="card-title">
+            {{ project.name }} <i><img src="{{ project.update }}" /></i>
+          </h5>
+          <p class="card-text">{{ project.about }}.</p>
+          <a href="{{ project.link }}" class="btn">view on github </a>
         </div>
       </div>
     </div>
-    <div class="col-lg-3 col-md-3 col-12 d-flex justify-content-center">
-      <div class="card ml-3 mt-2" style="width: 18rem">
-
-        <div id="box"></div>
-        <div class="card-body">
-          <h5 class="card-title">
-            E-commerce
-            <i
-              ><img
-                src="../../../assets/39574242-e-commerce-icon.webp"
-                style="height: 35px; width: auto"
-            /></i>
-          </h5>
-          <p class="card-text">
-            E-Commerce Site Operations Specialist: Streamlining Online Retail
-            Operations for Success.
-          </p>
-          <a href="#" class="btn">view on github</a>
-        </div>
-      </div>
-    </div> -->
+    <!--  -->
   </div>
 </div>

@@ -12,7 +12,7 @@ export class ProjectsComponent {
       src: '../../../assets/resume.png',
       about:
         'Creative Portfolio Showcasing Design Excellence and Innovation as a Fresher.',
-      link: 'x',
+      link: 'https://github.com/GautamYadav19/portfolio.git',
     },
     {
       name: 'CURD',
@@ -23,10 +23,10 @@ export class ProjectsComponent {
     },
     {
       name: 'E-commerce',
-      src: '../../../assets/39574242-e-commerce-icon.webp',
+      src: '../../../assets/3700298-removebg-preview.png',
       about:
         '  E-Commerce Site Operations Specialist: Streamlining Online RetailOperations for Success.',
-      link: 'x',
+      link: 'https://github.com/GautamYadav19/project.git',
       update: '../../../assets/icons8-coming-soon-64.png',
     },
   ];

@@ -1,10 +1,10 @@
-#box{
+/* #box{
   height: 250px;
   width: 270px;
   margin-left: 3%;
   border-radius: 50% 20% / 10% 40%;
   background-color:aliceblue;
-}
+} */
 
 .btn{
   font-weight: 600;
@@ -12,8 +12,23 @@
 }
 p{
   font-size: medium;
+  ;
 }
 .card{
   height:fit-content;
 }
-
+a{
+  text-decoration: none;
+  color: black;
+}
+i{
+  font-size: large;
+  margin-left: 10px;
+}
+img{
+  /*
+  width: 30%;
+  margin-left: 3%;
+  margin: 18%;
+  margin-left: 31%; */
+}
