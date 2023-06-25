@@ -25,7 +25,6 @@ export class ContactmeComponent {
   ) {}
 
   onSubmit() {
-    console.log(this.contactform.valid);
     if (this.contactform.valid) {
       this.submitted = true;
       return this.ApiService.createMail(this.contactform.value).subscribe({
@@ -45,5 +44,17 @@ export class ContactmeComponent {
     this.error = true;
     this.messageSend = false;
     return false;
+  }
+  callme() {
+    const num = document.createElement('a');
+    num.href = 'tel:+919410011857';
+    num.click();
+    console.log(num);
+  }
+  mailme() {
+    const mail = document.createElement('a');
+    mail.href =
+      'mailto:gautamyadav1992002@gmail.com?subject=personal mail(Portfolio) %20Subject&body=Your%20Message';
+    mail.click();
   }
 }

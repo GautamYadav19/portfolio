@@ -31,24 +31,20 @@ export class SkillsComponent {
   ];
   OnClick1() {
     this.count1++;
-    console.log(this.count1);
     if (this.count1 % 2 == 0) {
       this.count1 + 1;
       this.dropdown1 = true;
       this.dropdown2 = false;
-      console.log(this.count1);
     } else {
       this.dropdown1 = false;
     }
   }
   OnClick2() {
     this.count2++;
-    console.log(this.count2);
     if (this.count2 % 2 == 0) {
       this.count2 + 1;
       this.dropdown2 = true;
       this.dropdown1 = false;
-      console.log(this.count2);
     } else {
       this.dropdown2 = false;
     }
