@@ -34,7 +34,7 @@ export class ContactmeComponent {
           this.contactform.reset();
           this.error = false;
           this.router.navigate([this.currentRouter]);
-          alert('Message send successfully!');
+          // alert('Message send successfully!');
         },
         error(e) {
           return e;
@@ -49,7 +49,6 @@ export class ContactmeComponent {
     const num = document.createElement('a');
     num.href = 'tel:+919410011857';
     num.click();
-    console.log(num);
   }
   mailme() {
     const mail = document.createElement('a');

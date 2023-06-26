@@ -7,14 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AboutMeComponent {
   downloadPDF() {
-    const fileUrl = '../../../assets/myC.v.pdf';
-    const fileName = 'myC.V.pdf';
+    const fileUrl = '../../../assets/Gautam Yadav CV.pdf';
+    const fileName = 'Gautam Yadav CV.pdf';
 
     // Trigger the download
     const link = document.createElement('a');
     link.href = fileUrl;
     link.download = fileName;
     link.click();
-    console.log(link);
   }
 }

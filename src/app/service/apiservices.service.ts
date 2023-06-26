@@ -9,7 +9,7 @@ import { catchError, throwError } from 'rxjs';
   providedIn: 'root',
 })
 export class ApiservicesService {
-  baseUri: string = 'http://localhost:3000/mailApi';
+  baseUri: string = 'https://portfolioapi-production-d885.up.railway.app/';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
   constructor(private http: HttpClient) {}
